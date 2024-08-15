@@ -53,15 +53,15 @@ def products_postgres_to_gcs():
             },
             "schema": {
                 "fields": [
-                    {"name": "product_id", "type": "STRING", "mode": "REQUIRED"},
-                    {"name": "product_category_name", "type": "STRING", "mode": "REQUIRED"},
-                    {"name": "product_name_lenght", "type": "INTEGER", "mode": "REQUIRED"},
-                    {"name": "product_description_lenght", "type": "INTEGER", "mode": "REQUIRED"},
-                    {"name": "product_photos_qty", "type": "INTEGER", "mode": "REQUIRED"},
-                    {"name": "product_weight_g", "type": "INTEGER", "mode": "REQUIRED"},
-                    {"name": "product_length_cm", "type": "INTEGER", "mode": "REQUIRED"},
-                    {"name": "product_height_cm", "type": "INTEGER", "mode": "REQUIRED"},
-                    {"name": "product_width_cm", "type": "INTEGER", "mode": "REQUIRED"}
+                    {"name": "product_id", "type": "STRING", "mode": "NULLABLE"},
+                    {"name": "product_category_name", "type": "STRING", "mode": "NULLABLE"},
+                    {"name": "product_name_lenght", "type": "INTEGER", "mode": "NULLABLE"},
+                    {"name": "product_description_lenght", "type": "INTEGER", "mode": "NULLABLE"},
+                    {"name": "product_photos_qty", "type": "INTEGER", "mode": "NULLABLE"},
+                    {"name": "product_weight_g", "type": "INTEGER", "mode": "NULLABLE"},
+                    {"name": "product_length_cm", "type": "INTEGER", "mode": "NULLABLE"},
+                    {"name": "product_height_cm", "type": "INTEGER", "mode": "NULLABLE"},
+                    {"name": "product_width_cm", "type": "INTEGER", "mode": "NULLABLE"}
                 ]
             },
             "sourceFormat": "CSV",
