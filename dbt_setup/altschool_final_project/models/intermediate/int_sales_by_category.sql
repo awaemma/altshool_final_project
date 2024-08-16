@@ -1,4 +1,6 @@
-
+/**
+The required result will be derived from the orders, order_item and the product tables
+**/
 with sales as (
     select
        o.order_id,
