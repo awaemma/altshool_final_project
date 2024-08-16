@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: raw_data
     description: "Source data from the raw_data dataset in BigQuery"
-    database: alt-school-project-425214   # project id
-    schema: raw_data                      # dataset within my project
+    database: alt-school-project-425214  # GCP project id 
+    schema: raw_data  # dataset within my project
 
     tables:
       - name: customers

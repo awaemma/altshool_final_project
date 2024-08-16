@@ -56,6 +56,11 @@ Your Astronomer project contains the following files and folders:
 
     You should also be able to access your Postgres Database at `localhost:5432/postgres`.
 
+4. **How to run the Dags:**
+
+    Once the webserver is on, select any dag of choice and then run it by clicking on the play icon. The schedule within the dag is currently set to None so it has to be triggered manually. However, you can change this behaviour by setting the dag to automatically run at a desired time of choice, e.g @daily, @weekly e.t.c.
+
+
 ### Troubleshooting
 
 - **Port Conflicts**: Running `astro dev start` will start your project with the Airflow Webserver exposed at port `8080` and Postgres exposed at port `5432`. If you already have either of those ports allocated, you can either stop your existing Docker containers or change the port.
